@@ -10,12 +10,31 @@ use App\Mail\WelcomeToTamtay;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/','Front@index');
+Route::get('/products','Front@products');
+Route::get('/products/details/{id}','Front@product_details');
+Route::get('/products/categories','Front@product_categories');
+Route::get('/products/brands','Front@product_brands');
+Route::get('/blog','Front@blog');
+Route::get('/blog/post/{id}','Front@blog_post');
+Route::get('/contact-us','Front@contact_us');
+Route::get('/login','Front@login');
+Route::get('/logout','Front@logout');
+Route::get('/cart','Front@cart');
+Route::get('/checkout','Front@checkout');
+Route::get('/search/{query}','Front@search');
+//Route::get('/', function () {
+    //return view('welcome');
     
     // $email = new WelcomeToTamtay(new App\User(['name'=>'Peter']));    
     // Mail::to('hello@example.com')->send($email);
 
     // Mail::to('hello@example.com')->send(new WelcomeToTamtay);
-});
+//});
+
+/*Route::get('/hello',function(){
+    return 'Hello World!';
+});*/
+
+//Route::get('hello/{name}','Hello@show');
+
