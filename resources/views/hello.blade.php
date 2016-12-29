@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Hello</title>
+    <head>
+        <title>Laravel</title>
 
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100">
+        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-		<style type="text/css">
-			html, body {
+        <style>
+            html, body {
                 height: 100%;
             }
 
@@ -32,14 +32,14 @@
 
             .title {
                 font-size: 96px;
-            }			
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="content">
-				<div class="title">Hello, {{ $name }}, welcome to Laravel!</div>
-			</div>
-		</div>
-	</body>
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <div class="title">Hello {{$name}}, welcome to Laraland! : )</div>
+            </div>
+        </div>
+    </body>
 </html>
